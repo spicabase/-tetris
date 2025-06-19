@@ -2,26 +2,29 @@ body {
   margin: 0;
   background-color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
 canvas {
   border: 2px solid white;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
+
 canvas#nextCanvas {
-  border: 2px solid white;
   background-color: #222;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
 #score {
   color: white;
   font-size: 24px;
   font-family: 'Courier New', monospace;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  margin-top: 10px;
 }
 
 #controls {
@@ -29,6 +32,7 @@ canvas#nextCanvas {
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 #controls button {
@@ -38,10 +42,4 @@ canvas#nextCanvas {
   border-radius: 8px;
   background-color: #444;
   color: white;
-}
-
-canvas {
-  max-width: 100%;
-  height: auto;
-  box-sizing: border-box;
 }
