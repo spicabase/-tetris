@@ -23,3 +23,19 @@ canvas#nextCanvas {
   top: 20px;
   left: 20px;
 }
+
+#controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#controls button {
+  font-size: 24px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #444;
+  color: white;
+}
