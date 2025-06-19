@@ -88,6 +88,13 @@ function drop() {
   }
 }
 
+function rotateCurrent() {
+  const rotated = rotate(current.shape);
+  if (!collide(current.x, current.y, rotated)) {
+    current.shape = rotated;
+  }
+}
+
 function move(dir) {
   if (!collide(current.x + dir, current.y, current.shape)) {
     current.x += dir;
@@ -170,12 +177,6 @@ document.addEventListener("keydown", (e) => {
       current.shape = rotated;
     }
   }
-  function rotateCurrent() {
-  const rotated = rotate(current.shape);
-  if (!collide(current.x, current.y, rotated)) {
-    current.shape = rotated;
-  }
-}
 });
 
 document.addEventListener("keydown", (e) => {
