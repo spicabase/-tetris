@@ -10,20 +10,15 @@
 <body>
   <canvas id="gameCanvas" width="300" height="600"></canvas>
   <canvas id="nextCanvas" width="120" height="120"></canvas>
- <div id="controls">
-  <button id="leftButton">◀</button>
-  <button id="rotateButton">⟳</button>
-  <button id="rightButton">▶</button>
-  <button id="downButton">⬇</button>
+  <div id="controls">
+  <button id="leftButton" onclick="move(-1)">◀</button>
+  <button id="rotateButton" onclick="rotateCurrent()">⟳</button>
+  <button id="rightButton" onclick="move(1)">▶</button>
+  <button id="downButton" onclick="drop()">⬇</button>
 </div>
   <div id="score" style="font-size: 18px; margin: 10px 0;">Score: 0</div>
   <button id="restartButton" style="display: none;">もう一度プレイ</button>
-<div id="controls">
-  <button onclick="move(-1)">◀</button>
-  <button onclick="rotateCurrent()">⟳</button>
-  <button onclick="move(1)">▶</button>
-  <button onclick="drop()">⬇</button>
-</div>
+
   
   <script src="script.js"></script>
   <script>
