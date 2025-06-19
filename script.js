@@ -170,6 +170,12 @@ document.addEventListener("keydown", (e) => {
       current.shape = rotated;
     }
   }
+  function rotateCurrent() {
+  const rotated = rotate(current.shape);
+  if (!collide(current.x, current.y, rotated)) {
+    current.shape = rotated;
+  }
+}
 });
 
 document.addEventListener("keydown", (e) => {
