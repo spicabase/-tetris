@@ -39,3 +39,9 @@ canvas#nextCanvas {
   background-color: #444;
   color: white;
 }
+
+canvas {
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
