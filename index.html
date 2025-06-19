@@ -12,7 +12,13 @@
   <canvas id="nextCanvas" width="120" height="120"></canvas>
   <div id="score" style="font-size: 18px; margin: 10px 0;">Score: 0</div>
   <button id="restartButton" style="display: none;">もう一度プレイ</button>
-
+<div id="controls">
+  <button onclick="move(-1)">◀</button>
+  <button onclick="rotateCurrent()">⟳</button>
+  <button onclick="move(1)">▶</button>
+  <button onclick="drop()">⬇</button>
+</div>
+  
   <script src="script.js"></script>
   <script>
   if ('serviceWorker' in navigator) {
