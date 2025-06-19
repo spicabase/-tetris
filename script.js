@@ -199,3 +199,9 @@ document.getElementById("restartButton").addEventListener("click", () => {
   document.getElementById("restartButton").style.display = "none";
   spawn();
 });
+
+// スマホ用のタッチ操作に対応（ボタンタップで動作）
+document.getElementById("leftButton").addEventListener("touchstart", () => move(-1));
+document.getElementById("rightButton").addEventListener("touchstart", () => move(1));
+document.getElementById("downButton").addEventListener("touchstart", () => drop());
+document.getElementById("rotateButton").addEventListener("touchstart", () => rotateCurrent());
